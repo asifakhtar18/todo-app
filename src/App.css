@@ -1,38 +1,223 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+   background-color: black;
+   height: auto !important;
+   height: 100%; /* IE 6 Workaround */
+   min-height: 100vh;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.conatiner-white{
+  background-color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.toggle-off{
+  color: black;
+  font-size: 30px;
+  padding: 5px;
+  
+}
+.toggle-on{
   color: white;
+  font-size: 30px;
+  padding: 5px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+
+.header-black{
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 50px;
+    border-radius: 20px;
+ }
+
+ .header-white{
+   color: white;
+   
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 50px;
+    border-radius: 20px;
+ }
+
+ .h2-white{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 20px;
+ }
+
+ .h2-black{
+   color: black;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-weight: 300;
+   text-align: center;
+   font-size: 30px;
+   border-radius: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ 
+ .input-form{
+    display: flex;
+    justify-content: center;
+    
+ }
+
+
+  .input{
+   height: 50px;
+   background: none;
+   margin-right: 50px;
+   border: 1px solid white;
+   width: 700px;
+   color: white;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+ }
+
+
+ .input-white{
+  height: 50px;
+  background: none;
+  margin-right: 50px;
+  border: 1px solid black;
+  width: 700px;
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+
+ .list-container{
+   display: flex;
+   justify-content: center;
+ }
+
+
+ 
+
+ .add-btn{
+   font-size: 30px;
+   background-color: black;
+   color:white;
+   border: 1px solid white;
+   padding:  5px;
+   display: flex;
+   align-items: center;
+   
+ }
+
+ .add-btn-white{
+  font-size: 30px;
+  background-color: white;
+  color:black;
+  border: 1px solid black;
+  padding:  5px;
+  display: flex;
+  align-items: center;
+  
+}
+
+
+
+ .list{
+   
+   list-style-type: none;  
+   color: white;
+   border: 1px solid white;
+   width: 500px;
+   
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   
+  
+
+}
+
+.list-white{
+  list-style-type: none;  
+  color: black;
+  border: 1px solid black;
+  width: 500px;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+ 
+
+}
+
+
+.li-btn{
+   display: flex;
+   justify-content: flex-end;
+}
+
+
+ .delete-icon{
+   color: black;
+   height: 25px;
+}
+
+.delete-icon-black{
+  color: white;
+  height: 25px;
+}
+
+
+ .update-icon{
+   color: black;
+   height: 25px;
+ }
+
+
+ .update-icon-black{
+  color: white;
+  height: 25px;
+}
+
+.delete-btn{
+  background-color: white;
+  border: none;
+}
+
+.delete-btn-black{
+  background-color: black;
+  border: none;
+}
+
+.update-btn{
+  background-color: white;
+  border: none;
+}
+
+.update-btn-black{
+  background-color: black;
+  border: none;
+}
+
+@media only screen and (max-width: 820px){
+ 
+  .input-form{
+    padding: 0 10px;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media only screen and (max-width: 600px){
+  ul.list-container {
+    padding-inline-start: unset;
+    padding: 0 20px ;
+  }
+  .input-form{
+    padding: 0 10px;
   }
 }
